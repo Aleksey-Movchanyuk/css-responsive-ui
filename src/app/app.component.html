@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button class="example-icon">
+      <mat-icon>home</mat-icon>
+    </button>
+    <span>My Responsive UI App</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-toolbar-row>
+  <span class="example-spacer"></span>
+  <div class="toolbar">
+    <button mat-raised-button class="toolbar-command-a">Run Command A</button>
+    <button mat-raised-button color="primary" class="toolbar-command-b">Run Command B</button>
+    <button mat-raised-button color="accent" class="toolbar-command-c">Run Command C</button>
+    <button mat-raised-button color="warn" class="toolbar-command-d">Run Command D</button>
+  </div>
+  <div class="toolbar-menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item class="menu-command-a">
+        <button mat-raised-button>Run Command A</button>
+      </button>
+      <button mat-menu-item class="menu-command-b">
+        <button mat-raised-button color="primary">Run Command B</button>
+      </button>
+      <button mat-menu-item class="menu-command-c">
+        <button mat-raised-button color="accent">Run Command C</button>
+      </button>
+      <button mat-menu-item class="menu-command-d">
+        <button mat-raised-button color="warn">Run Command D</button>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar-row>
